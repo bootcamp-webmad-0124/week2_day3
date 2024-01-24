@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="cat">Soy el contenido inicial :)</div>
+
+    <script>
+
+        let theCatDiv = document.querySelector('#cat')
+
+        // getter
+        console.log('El HTML inicial era', theCatDiv.innerHTML)
+
+        // setter
+        theCatDiv.innerHTML = "<h1>Ahora soy este</h1>"
+
+    </script>
+
+</body>
+
+</html>

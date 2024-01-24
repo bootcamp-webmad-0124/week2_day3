@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Dog</h1>
+    <div id="cat"></div>
+    <div class="mouse"></div>
+    <div class="mouse"></div>
+    <div class="mouse"></div>
+    <div class="hello"></div>
+
+    <script>
+
+        // querySelectorAll returns an array of nodes
+        let allMouses = document.querySelectorAll('.mouse');
+        let catDiv = document.querySelectorAll('#cat');
+
+        console.log(allMouses)
+        console.log(catDiv)
+
+        allMouses.forEach(elm => {
+            elm.innerHTML = '<h1>Soy un ratón jejej</h1>'
+        })
+
+    </script>
+
+</body>
+
+</html>

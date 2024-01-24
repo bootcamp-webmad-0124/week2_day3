@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Dog</h1>
+    <div id="cat"></div>
+    <div class="mouse"></div>
+    <div class="mouse"></div>
+    <div class="mouse"></div>
+    <div class="hello"></div>
+
+    <script>
+
+        console.log('Este es el objeto document', document)
+
+        // getElementsByClassName selector
+        let mouseDivs = document.getElementsByClassName('mouse')
+        console.log('Los ratones', mouseDivs)
+
+        // innerHTML property manipulation
+        for (let i = 0; i < mouseDivs.length; i++) {
+            mouseDivs[i].innerHTML = 'Soy un ratón'
+        }
+
+        // array conversion for methods usage
+        const mousesArray = [...mouseDivs]
+        mousesArray.forEach(elm => {
+            elm.style.color = 'red'
+        })
+
+    </script>
+
+</body>
+
+</html>
